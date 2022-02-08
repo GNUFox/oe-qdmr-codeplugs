@@ -9,7 +9,7 @@ Using YAML Format readible by qdmr (https://dm3mat.darc.de/qdmr/).
 
 ## TODO:
 - [ ] Add more analog repeaters
-- [ ] Change analog repeater names to callsigns
+- [x] Change analog repeater names to callsigns
 - [ ] Add simplex DMR Frequencies in additional Zone
 - [ ] Add more description (user must change DMR-ID, may change welcome message)
 - [ ] Test other DMR radios 

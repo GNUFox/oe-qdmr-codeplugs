@@ -89,7 +89,7 @@ groupLists:
 channels:
   - analog:
       id: ch1
-      name: 1-SCKL
+      name: OE6XAG-V
       rxFrequency: 145.59999999999999
       txFrequency: 145
       rxOnly: false
@@ -102,7 +102,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch2
-      name: 1-BRUCK
+      name: OE6XBG-V
       rxFrequency: 145.65000000000001
       txFrequency: 145.05000000000001
       rxOnly: false
@@ -115,7 +115,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch3
-      name: 1-POHJ
+      name: S55VMB-V
       rxFrequency: 145.72499999999999
       txFrequency: 145.125
       rxOnly: false
@@ -127,7 +127,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch4
-      name: 4-SCKL
+      name: OE6XAG-U
       rxFrequency: 438.875
       txFrequency: 431.27499999999998
       rxOnly: false
@@ -140,7 +140,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch5
-      name: 4-GRAZB
+      name: OE6XCG-U
       rxFrequency: 438.77499999999998
       txFrequency: 431.17500000000001
       rxOnly: false
@@ -152,7 +152,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch6
-      name: 4-MITRG
+      name: OE6XFD-U
       rxFrequency: 438.19999999999999
       txFrequency: 430.60000000000002
       rxOnly: false
@@ -178,7 +178,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch8
-      name: 4-ZIRB
+      name: OE6XMD-U
       rxFrequency: 438.80000000000001
       txFrequency: 431.19999999999999
       rxOnly: false
@@ -190,7 +190,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch9
-      name: 4-HOCHW
+      name: OE3XWU-U
       rxFrequency: 439.07499999999999
       txFrequency: 431.47500000000002
       rxOnly: false
@@ -203,7 +203,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch10
-      name: 4-RCHST
+      name: OE6XRE-U
       rxFrequency: 439.10000000000002
       txFrequency: 431.5
       rxOnly: false
@@ -216,7 +216,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch11
-      name: 4TSTUHL
+      name: OE6XCD-U
       rxFrequency: 438.625
       txFrequency: 431.02499999999998
       rxOnly: false
@@ -228,7 +228,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch12
-      name: 4-STRKO
+      name: OE6XBF-U
       rxFrequency: 438.97500000000002
       txFrequency: 431.375
       rxOnly: false
@@ -240,7 +240,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch13
-      name: 4-POHJUMX
+      name: S55UMX-U
       rxFrequency: 439.19999999999999
       txFrequency: 431.60000000000002
       rxOnly: false
@@ -253,7 +253,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch14
-      name: 4-POHJDMX
+      name: S55DMX-U
       rxFrequency: 438.35000000000002
       txFrequency: 430.75
       rxOnly: false
@@ -266,7 +266,7 @@ channels:
       squelch: !<!default> ""
   - analog:
       id: ch15
-      name: 4-POHJUMB
+      name: S55UMB-U
       rxFrequency: 439.22500000000002
       txFrequency: 431.625
       rxOnly: false
@@ -2760,6 +2760,54 @@ channels:
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
+  - analog:
+      id: ch183
+      name: OE3XWW-V
+      rxFrequency: 145.76249999999999
+      txFrequency: 145.16249999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch184
+      name: OE3XHW-U
+      rxFrequency: 438.75
+      txFrequency: 431.14999999999998
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch185
+      name: OE3XCR-U
+      rxFrequency: 438.85000000000002
+      txFrequency: 431.25
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch186
+      name: OE6XDG-V
+      rxFrequency: 145.69999999999999
+      txFrequency: 145.09999999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
 zones:
   - id: zone1
     name: OE1
@@ -2771,7 +2819,7 @@ zones:
     B: [ch48, ch50, ch51, ch53]
   - id: zone3
     name: OE3x
-    A: []
+    A: [ch183, ch9, ch184, ch185]
     B: [ch54, ch56, ch57, ch59, ch60, ch62, ch63, ch65, ch66, ch68, ch69, ch71, ch72, ch74, ch75, ch77]
   - id: zone4
     name: OE3y
