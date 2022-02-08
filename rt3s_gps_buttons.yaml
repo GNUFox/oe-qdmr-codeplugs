@@ -1245,8 +1245,8 @@ channels:
   - digital:
       id: ch84
       name: OE3XKQ-2
-      rxFrequency: 430.97500000000002
-      txFrequency: 438.57499999999999
+      rxFrequency: 438.57499999999999
+      txFrequency: 430.97500000000002
       rxOnly: false
       admit: Always
       colorCode: 1
@@ -1260,8 +1260,8 @@ channels:
   - digital:
       id: ch85
       name: OE3XKQ-2G
-      rxFrequency: 430.97500000000002
-      txFrequency: 438.57499999999999
+      rxFrequency: 438.57499999999999
+      txFrequency: 430.97500000000002
       rxOnly: false
       admit: Always
       colorCode: 1
@@ -1276,8 +1276,8 @@ channels:
   - digital:
       id: ch86
       name: OE3XKQ-1C
-      rxFrequency: 430.97500000000002
-      txFrequency: 438.57499999999999
+      rxFrequency: 438.57499999999999
+      txFrequency: 430.97500000000002
       rxOnly: false
       admit: Always
       colorCode: 1
