@@ -1,7 +1,7 @@
 # OE QDMR Codeplugs
 
 A Repository for DMR-Codeplugs for Austria (and neighbouring countries / regions).  
-Using YAML Format readible by qdmr (https://dm3mat.darc.de/qdmr/).
+Using YAML Format readable by qdmr (https://dm3mat.darc.de/qdmr/).
 
 ## License: CC0 Public domain
 
