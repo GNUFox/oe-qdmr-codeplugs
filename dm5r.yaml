@@ -1,0 +1,2860 @@
+---
+version: 0.10.1
+settings:
+  introLine1: YourCall
+  introLine2: YourName
+  micLevel: 4
+  speech: false
+  power: High
+  squelch: 1
+  vox: 0
+  tot: 0
+  tyt:
+    monitorType: Open
+    allLEDsDisabled: false
+    talkPermitToneDigital: false
+    talkPermitToneAnalog: false
+    passwordAndLock: false
+    channelFreeIndicationTone: false
+    allTonesDisabled: true
+    powerSaveMode: true
+    wakeupPreamble: true
+    bootPicture: false
+    channelMode: true
+    channelModeA: true
+    channelModeB: true
+    txPreambleDuration: 600
+    groupCallHangTime: 3000
+    privateCallHangTime: 3000
+    lowBatteryWarnInterval: 120
+    callAlertToneContinuous: false
+    callAlertToneDuration: 0
+    loneWorkerResponseTime: 1
+    loneWorkerReminderTime: 10
+    digitalScanHangTime: 1000
+    analogScanHangTime: 1000
+    backlightAlwaysOn: false
+    backlightDuration: 10
+    keypadLockManual: true
+    keypadLockTime: 1275
+    powerOnPasswordEnabled: false
+    powerOnPassword: 0
+    radioProgPasswordEnabled: false
+    radioProgPassword: 0
+    pcProgPassword: ""
+    privateCallMatch: true
+    groupCallMatch: true
+    channelHangTime: 3000
+  defaultID: id1
+radioIDs:
+  - dmr: {id: id1, name: "", number: 2320000}
+contacts:
+  - dmr: {id: cont1, name: echotest, ring: false, type: GroupCall, number: 9990}
+  - dmr: {id: cont2, name: TG9, ring: false, type: GroupCall, number: 9}
+  - dmr: {id: cont3, name: OE-Master, ring: false, type: GroupCall, number: 2320}
+  - dmr: {id: cont4, name: Steiermark, ring: false, type: GroupCall, number: 2326}
+  - dmr: {id: cont5, name: Kaernten, ring: false, type: GroupCall, number: 2328}
+  - dmr: {id: cont6, name: Wien, ring: false, type: GroupCall, number: 2321}
+  - dmr: {id: cont7, name: Vorarlberg, ring: false, type: GroupCall, number: 2329}
+  - dmr: {id: cont8, name: Tirol, ring: false, type: GroupCall, number: 2327}
+  - dmr: {id: cont9, name: Salzburg, ring: false, type: GroupCall, number: 2322}
+  - dmr: {id: cont10, name: Oberoe, ring: false, type: GroupCall, number: 2325}
+  - dmr: {id: cont11, name: Niederoe, ring: false, type: GroupCall, number: 2323}
+  - dmr: {id: cont12, name: Burgenland, ring: false, type: GroupCall, number: 2324}
+  - dmr: {id: cont13, name: Server, ring: false, type: PrivateCall, number: 4190}
+  - dmr: {id: cont14, name: OE Test, ring: false, type: PrivateCall, number: 4180}
+  - dmr: {id: cont15, name: OE Suport, ring: false, type: PrivateCall, number: 4189}
+  - dmr: {id: cont16, name: YL Reflektor, ring: false, type: PrivateCall, number: 4185}
+  - dmr: {id: cont17, name: OE Hotspot, ring: false, type: PrivateCall, number: 4182}
+  - dmr: {id: cont18, name: C4FM-D-A-CH, ring: false, type: GroupCall, number: 23201}
+  - dmr: {id: cont19, name: C4FM-OE-T1, ring: false, type: GroupCall, number: 7}
+  - dmr: {id: cont20, name: EMGTS1, ring: false, type: PrivateCall, number: 232112}
+  - dmr: {id: cont21, name: OE1 Lokal, ring: false, type: PrivateCall, number: 4181}
+  - dmr: {id: cont22, name: OE1 Ref, ring: false, type: PrivateCall, number: 4191}
+  - dmr: {id: cont23, name: OE2 Ref, ring: false, type: PrivateCall, number: 4192}
+  - dmr: {id: cont24, name: OE3 Ref, ring: false, type: PrivateCall, number: 4193}
+  - dmr: {id: cont25, name: OE3 Lokal, ring: false, type: PrivateCall, number: 4183}
+  - dmr: {id: cont26, name: OE4 Ref, ring: false, type: PrivateCall, number: 4194}
+  - dmr: {id: cont27, name: OE5 Ref, ring: false, type: PrivateCall, number: 4195}
+  - dmr: {id: cont28, name: OE6 Ref, ring: false, type: PrivateCall, number: 4196}
+  - dmr: {id: cont29, name: OE6 Lokal, ring: false, type: PrivateCall, number: 4186}
+  - dmr: {id: cont30, name: OE7 Ref, ring: false, type: PrivateCall, number: 4197}
+  - dmr: {id: cont31, name: OE7 Lokal, ring: false, type: PrivateCall, number: 4187}
+  - dmr: {id: cont32, name: OE8 Ref, ring: false, type: PrivateCall, number: 4198}
+  - dmr: {id: cont33, name: OE8 Lokal, ring: false, type: PrivateCall, number: 4188}
+  - dmr: {id: cont34, name: OE9 Ref, ring: false, type: PrivateCall, number: 4199}
+  - dmr: {id: cont35, name: dmr-aprs, ring: false, type: PrivateCall, number: 9057}
+groupLists:
+  - {id: grp1, name: OE, contacts: [cont3, cont2, cont4, cont5, cont6, cont7, cont8, cont9, cont10, cont11, cont12, cont18, cont1, cont19]}
+channels:
+  - analog:
+      id: ch1
+      name: 1-SCKL
+      rxFrequency: 145.59999999999999
+      txFrequency: 145
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 103.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch2
+      name: 1-BRUCK
+      rxFrequency: 145.65000000000001
+      txFrequency: 145.05000000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 103.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch3
+      name: 1-POHJ
+      rxFrequency: 145.72499999999999
+      txFrequency: 145.125
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch4
+      name: 4-SCKL
+      rxFrequency: 438.875
+      txFrequency: 431.27499999999998
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 103.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch5
+      name: 4-GRAZB
+      rxFrequency: 438.77499999999998
+      txFrequency: 431.17500000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch6
+      name: 4-MITRG
+      rxFrequency: 438.19999999999999
+      txFrequency: 430.60000000000002
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 103.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch7
+      name: 4-KLIP
+      rxFrequency: 438.30000000000001
+      txFrequency: 430.69999999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 88.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch8
+      name: 4-ZIRB
+      rxFrequency: 438.80000000000001
+      txFrequency: 431.19999999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch9
+      name: 4-HOCHW
+      rxFrequency: 439.07499999999999
+      txFrequency: 431.47500000000002
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 162.199997}
+      squelch: !<!default> ""
+  - analog:
+      id: ch10
+      name: 4-RCHST
+      rxFrequency: 439.10000000000002
+      txFrequency: 431.5
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 103.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch11
+      name: 4TSTUHL
+      rxFrequency: 438.625
+      txFrequency: 431.02499999999998
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch12
+      name: 4-STRKO
+      rxFrequency: 438.97500000000002
+      txFrequency: 431.375
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch13
+      name: 4-POHJUMX
+      rxFrequency: 439.19999999999999
+      txFrequency: 431.60000000000002
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 88.5}
+      squelch: !<!default> ""
+  - analog:
+      id: ch14
+      name: 4-POHJDMX
+      rxFrequency: 438.35000000000002
+      txFrequency: 430.75
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      txTone: {ctcss: 123}
+      squelch: !<!default> ""
+  - analog:
+      id: ch15
+      name: 4-POHJUMB
+      rxFrequency: 439.22500000000002
+      txFrequency: 431.625
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch16
+      name: 2mAPRS
+      rxFrequency: 144.80000000000001
+      txFrequency: 144.80000000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Wide
+      power: High
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch17
+      name: PMR-1
+      rxFrequency: 446.00625000000002
+      txFrequency: 446.00625000000002
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch18
+      name: PMR-2
+      rxFrequency: 446.01875000000001
+      txFrequency: 446.01875000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch19
+      name: PMR-3
+      rxFrequency: 446.03125
+      txFrequency: 446.03125
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch20
+      name: PMR-4
+      rxFrequency: 446.04374999999999
+      txFrequency: 446.04374999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch21
+      name: PMR-5
+      rxFrequency: 446.05624999999998
+      txFrequency: 446.05624999999998
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch22
+      name: PMR-6
+      rxFrequency: 446.06875000000002
+      txFrequency: 446.06875000000002
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch23
+      name: PMR-7
+      rxFrequency: 446.08125000000001
+      txFrequency: 446.08125000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch24
+      name: PMR-8
+      rxFrequency: 446.09375
+      txFrequency: 446.09375
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch25
+      name: PMR-9
+      rxFrequency: 446.10624999999999
+      txFrequency: 446.10624999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch26
+      name: PMR-10
+      rxFrequency: 446.11874999999998
+      txFrequency: 446.11874999999998
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch27
+      name: PMR-11
+      rxFrequency: 446.13125000000002
+      txFrequency: 446.13125000000002
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch28
+      name: PMR-12
+      rxFrequency: 446.14375000000001
+      txFrequency: 446.14375000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch29
+      name: PMR-13
+      rxFrequency: 446.15625
+      txFrequency: 446.15625
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch30
+      name: PMR-14
+      rxFrequency: 446.16874999999999
+      txFrequency: 446.16874999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch31
+      name: PMR-15
+      rxFrequency: 446.18124999999998
+      txFrequency: 446.18124999999998
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch32
+      name: PMR-16
+      rxFrequency: 446.19375000000002
+      txFrequency: 446.19375000000002
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: Low
+      timeout: 0
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch33
+      name: FRE-1
+      rxFrequency: 149.02500000000001
+      txFrequency: 149.02500000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch34
+      name: FRE-2
+      rxFrequency: 149.03749999999999
+      txFrequency: 149.03749999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch35
+      name: FRE-3
+      rxFrequency: 149.05000000000001
+      txFrequency: 149.05000000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch36
+      name: FRE-4
+      rxFrequency: 149.08750000000001
+      txFrequency: 149.08750000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch37
+      name: FRE-5
+      rxFrequency: 149.09999999999999
+      txFrequency: 149.09999999999999
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - analog:
+      id: ch38
+      name: FRE-6
+      rxFrequency: 149.11250000000001
+      txFrequency: 149.11250000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+  - digital:
+      id: ch39
+      name: OE1XDT-2
+      rxFrequency: 438.33749999999998
+      txFrequency: 430.73750000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch40
+      name: OE1XDT-2G
+      rxFrequency: 438.33749999999998
+      txFrequency: 430.73750000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch41
+      name: OE1XDT-1C
+      rxFrequency: 438.33749999999998
+      txFrequency: 430.73750000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch42
+      name: OE1XQU-2
+      rxFrequency: 438.82499999999999
+      txFrequency: 430.22500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch43
+      name: OE1XQU-2G
+      rxFrequency: 438.82499999999999
+      txFrequency: 430.22500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch44
+      name: OE1XQU-1C
+      rxFrequency: 438.82499999999999
+      txFrequency: 430.22500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch45
+      name: OE1XUR-2
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch46
+      name: OE1XUR-2G
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch47
+      name: OE1XUR-1C
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch48
+      name: OE2XSV-2
+      rxFrequency: 439.08749999999998
+      txFrequency: 431.48750000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch49
+      name: OE2XSV-2G
+      rxFrequency: 439.08749999999998
+      txFrequency: 431.48750000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch50
+      name: OE2XSV-1C
+      rxFrequency: 439.08749999999998
+      txFrequency: 431.48750000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch51
+      name: OE2XZR-2
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch52
+      name: OE2XZR-2G
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch53
+      name: OE2XZR-1C
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch54
+      name: OE3XWU-2
+      rxFrequency: 439.07499999999999
+      txFrequency: 431.47500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch55
+      name: OE3XWU-2G
+      rxFrequency: 439.07499999999999
+      txFrequency: 431.47500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch56
+      name: OE3XWU-1C
+      rxFrequency: 439.07499999999999
+      txFrequency: 431.47500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch57
+      name: OE3XWW-2
+      rxFrequency: 438.57499999999999
+      txFrequency: 430.97500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch58
+      name: OE3XWW-2G
+      rxFrequency: 438.57499999999999
+      txFrequency: 430.97500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch59
+      name: OE3XWW-1C
+      rxFrequency: 438.57499999999999
+      txFrequency: 430.97500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch60
+      name: OE3XCR-2
+      rxFrequency: 438.85000000000002
+      txFrequency: 431.25
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch61
+      name: OE3XCR-2G
+      rxFrequency: 438.85000000000002
+      txFrequency: 431.25
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch62
+      name: OE3XCR-1C
+      rxFrequency: 438.85000000000002
+      txFrequency: 431.25
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch63
+      name: OE3XNK-2
+      rxFrequency: 438.22500000000002
+      txFrequency: 430.625
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch64
+      name: OE3XNK-2G
+      rxFrequency: 438.22500000000002
+      txFrequency: 430.625
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch65
+      name: OE3XNK-1C
+      rxFrequency: 438.22500000000002
+      txFrequency: 430.625
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch66
+      name: OE3XPC-2
+      rxFrequency: 438.69999999999999
+      txFrequency: 431.10000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch67
+      name: OE3XPC-2G
+      rxFrequency: 438.69999999999999
+      txFrequency: 431.10000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch68
+      name: OE3XPC-1C
+      rxFrequency: 438.69999999999999
+      txFrequency: 431.10000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch69
+      name: OE3XKC-2
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch70
+      name: OE3XKC-2G
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch71
+      name: OE3XKC-1C
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch72
+      name: OE3XKV-2
+      rxFrequency: 438.19999999999999
+      txFrequency: 430.60000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch73
+      name: OE3XKV-2G
+      rxFrequency: 438.19999999999999
+      txFrequency: 430.60000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch74
+      name: OE3XKV-1C
+      rxFrequency: 438.19999999999999
+      txFrequency: 430.60000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch75
+      name: OE3XRB-2
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch76
+      name: OE3XRB-2G
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch77
+      name: OE3XRB-1C
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch78
+      name: OE3XWJ-2
+      rxFrequency: 438.42500000000001
+      txFrequency: 430.82499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch79
+      name: OE3XWJ-2G
+      rxFrequency: 438.42500000000001
+      txFrequency: 430.82499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch80
+      name: OE3XWJ-1C
+      rxFrequency: 438.42500000000001
+      txFrequency: 430.82499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch81
+      name: OE3XSA-2
+      rxFrequency: 438.35000000000002
+      txFrequency: 430.75
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch82
+      name: OE3XSA-2G
+      rxFrequency: 438.35000000000002
+      txFrequency: 430.75
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch83
+      name: OE3XSA-1C
+      rxFrequency: 438.35000000000002
+      txFrequency: 430.75
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch84
+      name: OE3XKQ-2
+      rxFrequency: 430.97500000000002
+      txFrequency: 438.57499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch85
+      name: OE3XKQ-2G
+      rxFrequency: 430.97500000000002
+      txFrequency: 438.57499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch86
+      name: OE3XKQ-1C
+      rxFrequency: 430.97500000000002
+      txFrequency: 438.57499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch87
+      name: OE3XYR-2
+      rxFrequency: 438.375
+      txFrequency: 430.77499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch88
+      name: OE3XYR-2G
+      rxFrequency: 438.375
+      txFrequency: 430.77499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch89
+      name: OE3XYR-1C
+      rxFrequency: 438.375
+      txFrequency: 430.77499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch90
+      name: OE3XQA-2
+      rxFrequency: 438.67500000000001
+      txFrequency: 431.07499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch91
+      name: OE3XQA-2G
+      rxFrequency: 438.67500000000001
+      txFrequency: 431.07499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch92
+      name: OE3XQA-1C
+      rxFrequency: 438.67500000000001
+      txFrequency: 431.07499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch93
+      name: OE4XBJ-2
+      rxFrequency: 438.32499999999999
+      txFrequency: 430.72500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch94
+      name: OE4XBJ-2G
+      rxFrequency: 438.32499999999999
+      txFrequency: 430.72500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch95
+      name: OE4XBJ-1C
+      rxFrequency: 438.32499999999999
+      txFrequency: 430.72500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch96
+      name: OE4XUB-2
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch97
+      name: OE4XUB-2G
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch98
+      name: OE4XUB-1C
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch99
+      name: OE5XIM-2
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch100
+      name: OE5XIM-2G
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch101
+      name: OE5XIM-1C
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch102
+      name: OE5XLL-2
+      rxFrequency: 438.47500000000002
+      txFrequency: 430.875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch103
+      name: OE5XLL-2G
+      rxFrequency: 438.47500000000002
+      txFrequency: 430.875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch104
+      name: OE5XLL-1C
+      rxFrequency: 438.47500000000002
+      txFrequency: 430.875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch105
+      name: OE5XGL-2
+      rxFrequency: 438.80000000000001
+      txFrequency: 431.19999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch106
+      name: OE5XGL-2G
+      rxFrequency: 438.80000000000001
+      txFrequency: 431.19999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch107
+      name: OE5XGL-1C
+      rxFrequency: 438.80000000000001
+      txFrequency: 431.19999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch108
+      name: OE6XAG-2
+      rxFrequency: 438.60000000000002
+      txFrequency: 431
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch109
+      name: OE6XAG-2G
+      rxFrequency: 438.60000000000002
+      txFrequency: 431
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch110
+      name: OE6XAG-1C
+      rxFrequency: 438.60000000000002
+      txFrequency: 431
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch111
+      name: OE6XBF-2
+      rxFrequency: 438.91250000000002
+      txFrequency: 431.3125
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch112
+      name: OE6XBF-2G
+      rxFrequency: 438.91250000000002
+      txFrequency: 431.3125
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch113
+      name: OE6XBF-1C
+      rxFrequency: 438.91250000000002
+      txFrequency: 431.3125
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch114
+      name: OE6XBG-2
+      rxFrequency: 438.92500000000001
+      txFrequency: 431.32499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch115
+      name: OE6XBG-2G
+      rxFrequency: 438.92500000000001
+      txFrequency: 431.32499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch116
+      name: OE6XBG-1C
+      rxFrequency: 438.92500000000001
+      txFrequency: 431.32499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch117
+      name: OE6XLR-2
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch118
+      name: OE6XLR-2G
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch119
+      name: OE6XLR-1C
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch120
+      name: OE6XDG-2
+      rxFrequency: 438.67500000000001
+      txFrequency: 431.07499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch121
+      name: OE6XDG-2G
+      rxFrequency: 438.67500000000001
+      txFrequency: 431.07499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch122
+      name: OE6XDG-1C
+      rxFrequency: 438.67500000000001
+      txFrequency: 431.07499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch123
+      name: OE6XME-2
+      rxFrequency: 438.52499999999998
+      txFrequency: 430.92500000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch124
+      name: OE6XME-2G
+      rxFrequency: 438.52499999999998
+      txFrequency: 430.92500000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch125
+      name: OE6XME-1C
+      rxFrequency: 438.52499999999998
+      txFrequency: 430.92500000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch126
+      name: OE7XLI-2
+      rxFrequency: 438.875
+      txFrequency: 431.27499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch127
+      name: OE7XLI-2G
+      rxFrequency: 438.875
+      txFrequency: 431.27499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch128
+      name: OE7XLI-1C
+      rxFrequency: 438.875
+      txFrequency: 431.27499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch129
+      name: OE7XUT-2
+      rxFrequency: 438.625
+      txFrequency: 431.02499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch130
+      name: OE7XUT-2G
+      rxFrequency: 438.625
+      txFrequency: 431.02499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch131
+      name: OE7XUT-1C
+      rxFrequency: 438.625
+      txFrequency: 431.02499999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch132
+      name: OE7XFJ-2
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch133
+      name: OE7XFJ-2G
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch134
+      name: OE7XFJ-1C
+      rxFrequency: 438.25
+      txFrequency: 430.64999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch135
+      name: OE7XWT-2
+      rxFrequency: 438.47500000000002
+      txFrequency: 430.875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch136
+      name: OE7XWT-2G
+      rxFrequency: 438.47500000000002
+      txFrequency: 430.875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch137
+      name: OE7XWT-1C
+      rxFrequency: 438.47500000000002
+      txFrequency: 430.875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch138
+      name: OE7XZH-2
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch139
+      name: OE7XZH-2G
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch140
+      name: OE7XZH-1C
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch141
+      name: OE7XTT-2
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch142
+      name: OE7XTT-2G
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch143
+      name: OE7XTT-1C
+      rxFrequency: 438.55000000000001
+      txFrequency: 430.94999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch144
+      name: OE7XGR-2
+      rxFrequency: 438.92500000000001
+      txFrequency: 431.32499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch145
+      name: OE7XGR-2G
+      rxFrequency: 438.92500000000001
+      txFrequency: 431.32499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch146
+      name: OE7XGR-1C
+      rxFrequency: 438.92500000000001
+      txFrequency: 431.32499999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch147
+      name: OE7XCJ-2
+      rxFrequency: 438.39999999999998
+      txFrequency: 430.80000000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch148
+      name: OE7XCJ-2G
+      rxFrequency: 438.39999999999998
+      txFrequency: 430.80000000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch149
+      name: OE7XCJ-1C
+      rxFrequency: 438.39999999999998
+      txFrequency: 430.80000000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch150
+      name: OE7XBI-2
+      rxFrequency: 439.07499999999999
+      txFrequency: 431.47500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch151
+      name: OE7XBI-2G
+      rxFrequency: 439.07499999999999
+      txFrequency: 431.47500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch152
+      name: OE7XBI-1C
+      rxFrequency: 439.07499999999999
+      txFrequency: 431.47500000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch153
+      name: OE7XKH-2
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch154
+      name: OE7XKH-2G
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch155
+      name: OE7XKH-1C
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch156
+      name: OE8XPK-2
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch157
+      name: OE8XPK-2G
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch158
+      name: OE8XPK-1C
+      rxFrequency: 438.5
+      txFrequency: 430.89999999999998
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch159
+      name: OE8XWK-2
+      rxFrequency: 438.94999999999999
+      txFrequency: 431.35000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch160
+      name: OE8XWK-2G
+      rxFrequency: 438.94999999999999
+      txFrequency: 431.35000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch161
+      name: OE8XWK-1C
+      rxFrequency: 438.94999999999999
+      txFrequency: 431.35000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch162
+      name: OE8XMK-2
+      rxFrequency: 438.85000000000002
+      txFrequency: 431.25
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch163
+      name: OE8XMK-2G
+      rxFrequency: 438.85000000000002
+      txFrequency: 431.25
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch164
+      name: OE8XMK-1C
+      rxFrequency: 438.85000000000002
+      txFrequency: 431.25
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch165
+      name: OE8XKK-2
+      rxFrequency: 438.60000000000002
+      txFrequency: 431
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch166
+      name: OE8XKK-2G
+      rxFrequency: 438.60000000000002
+      txFrequency: 431
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch167
+      name: OE8XKK-1C
+      rxFrequency: 438.60000000000002
+      txFrequency: 431
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch168
+      name: OE8XGK-2
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch169
+      name: OE8XGK-2G
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch170
+      name: OE8XGK-1C
+      rxFrequency: 438.44999999999999
+      txFrequency: 430.85000000000002
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch171
+      name: OE8XFK-2
+      rxFrequency: 438.89999999999998
+      txFrequency: 431.30000000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch172
+      name: OE8XFK-2G
+      rxFrequency: 438.89999999999998
+      txFrequency: 431.30000000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch173
+      name: OE8XFK-1C
+      rxFrequency: 438.89999999999998
+      txFrequency: 431.30000000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch174
+      name: OE9XMH-2
+      rxFrequency: 438.27499999999998
+      txFrequency: 430.67500000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch175
+      name: OE9XMH-2G
+      rxFrequency: 438.27499999999998
+      txFrequency: 430.67500000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch176
+      name: OE9XMH-1C
+      rxFrequency: 438.27499999999998
+      txFrequency: 430.67500000000001
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch177
+      name: OE9XXI-2
+      rxFrequency: 439.05000000000001
+      txFrequency: 431.44999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch178
+      name: OE9XXI-2G
+      rxFrequency: 439.05000000000001
+      txFrequency: 431.44999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch179
+      name: OE9XXI-1C
+      rxFrequency: 439.05000000000001
+      txFrequency: 431.44999999999999
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch180
+      name: OE9XVI-2
+      rxFrequency: 438.28750000000002
+      txFrequency: 430.6875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch181
+      name: OE9XVI-2G
+      rxFrequency: 438.28750000000002
+      txFrequency: 430.6875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont2
+      aprs: aprs1
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch182
+      name: OE9XVI-1C
+      rxFrequency: 438.28750000000002
+      txFrequency: 430.6875
+      rxOnly: false
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp1
+      contact: cont19
+      power: !<!default> ""
+      timeout: !<!default> ""
+      vox: !<!default> ""
+zones:
+  - id: zone1
+    name: OE1
+    A: []
+    B: [ch39, ch41, ch42, ch44, ch45, ch47]
+  - id: zone2
+    name: OE2
+    A: []
+    B: [ch48, ch50, ch51, ch53]
+  - id: zone3
+    name: OE3x
+    A: []
+    B: [ch54, ch56, ch57, ch59, ch60, ch62, ch63, ch65, ch66, ch68, ch69, ch71, ch72, ch74, ch75, ch77]
+  - id: zone4
+    name: OE3y
+    A: []
+    B: [ch78, ch80, ch81, ch83, ch84, ch86, ch87, ch89, ch90, ch92]
+  - id: zone5
+    name: OE4
+    A: []
+    B: [ch93, ch94, ch95, ch96, ch97, ch98]
+  - id: zone6
+    name: OE5
+    A: []
+    B: [ch99, ch101, ch102, ch104, ch105, ch107]
+  - id: zone7
+    name: OE6
+    A: [ch1, ch2, ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch10, ch11, ch12, ch13, ch14, ch15, ch16]
+    B: [ch108, ch110, ch111, ch113, ch54, ch56, ch114, ch116, ch117, ch119]
+  - id: zone8
+    name: OE7x
+    A: []
+    B: [ch126, ch128, ch129, ch131, ch132, ch134, ch135, ch137, ch138, ch140, ch141, ch143, ch144, ch146, ch147, ch149]
+  - id: zone9
+    name: OE7y
+    A: []
+    B: [ch150, ch152, ch153, ch155]
+  - id: zone10
+    name: OE8
+    A: []
+    B: [ch156, ch158, ch159, ch161, ch162, ch164, ch165, ch167, ch168, ch170, ch171, ch173]
+  - id: zone11
+    name: OE9
+    A: []
+    B: [ch174, ch176, ch177, ch179, ch180, ch182]
+  - id: zone12
+    name: PMR-FM
+    A: [ch17, ch18, ch19, ch20, ch21, ch22, ch23, ch24, ch25, ch26, ch27, ch28, ch29, ch30, ch31, ch32]
+    B: [ch33, ch34, ch35, ch36, ch37, ch38]
+positioning:
+  - dmr:
+      id: aprs1
+      name: dmr-aprs
+      period: 60
+      contact: cont35
+tytExtension:
+  buttonSettings:
+    sideButton1Short: PowerSelect
+    sideButton1Long: ZoneDecrement
+    sideButton2Short: MonitorToggle
+    sideButton2Long: ZoneIncrement
+    sideButton3Short: Disabled
+    sideButton3Long: Disabled
+    progButton1Short: Disabled
+    progButton1Long: Disabled
+    progButton2Short: Disabled
+    progButton2Long: Disabled
+    longPressDuration: 500
+  menuSettings:
+    hangtimeIsInfinite: false
+    hangTime: 10
+    textMessage: true
+    callAlert: true
+    contactEditing: true
+    manualDial: true
+    remoteRadioCheck: true
+    remoteMonitor: true
+    remoteRadioEnable: true
+    remoteRadioDisable: true
+    scan: true
+    scanListEditing: true
+    callLogMissed: true
+    callLogAnswered: true
+    callLogOutgoing: true
+    talkaround: true
+    alertTone: true
+    power: true
+    backlight: true
+    bootScreen: true
+    keypadLock: true
+    ledIndicator: true
+    squelch: true
+    vox: true
+    password: true
+    displayMode: true
+    radioProgramming: true
+    gpsInformation: true
+...
