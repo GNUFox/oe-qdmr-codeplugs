@@ -5,6 +5,9 @@ Using YAML Format readible by qdmr (https://dm3mat.darc.de/qdmr/).
 
 **WARNING: There may be some errors. Work in Progress**
 
+The `rt3s_gps_buttons.yaml` could work with other radios as well, I only tested it with a RETEVIS RT3S GPS.  
+The `rd5r.yaml` is modified for the Baofeng RD-5R (or similar radios) as they can only store 16 channels per zone.
+
 ## License: CC0 Public domain
 
 ## TODO:
